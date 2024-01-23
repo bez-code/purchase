@@ -1,0 +1,14 @@
+<div class="shipping-cart-item">
+    <div class="product-container">
+        <img [src]="item.image" alt="" class="product-img">
+        <div class="product-name">{{item.name}}</div>
+        <div class="product-price">${{item.price}}</div>
+
+        <div class="action-list">
+            <button class="buttun-plus" (click)="add()">+</button>
+            <input disabled [value]="item.count" type="number" name="" id="" class="textfield">
+            <button class="button-minues" (click)="sub()">-</button>
+            <button class="button-delete" (click)="del(item.id)"    >Delete</button>
+        </div>
+    </div>
+</div>
